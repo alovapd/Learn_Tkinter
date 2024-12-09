@@ -10,10 +10,10 @@ window = tk.Tk()
 window.title('Tkinter Variables')
 window.geometry('300x500')
 
-#tkinter VCAriable
+#tkinter Variable
 string_var = tk.StringVar()
 
-#lWidgets
+#widgets
 label = ttk.Label(master = window, text = "label", textvariable = string_var)
 label.pack()
 
@@ -22,6 +22,17 @@ entry.pack()
 
 button = ttk.Button(master = window, text = 'button', command = button_func)
 button.pack()
+
+#excerise
+
+excercise_var = tk.StringVar(value = 'test')
+
+entry1 =  ttk.entry(master = window, textvariable = excercise_var)
+entry1.pack()
+entry2 = ttk.entry(master = window, textvariable = excercise_var)
+entry2.pack()
+exersize_label = ttk.Label(master = window, textvariable = excercise_var)
+exersize_label.pack()
 
 #run
 window.mainloop()
