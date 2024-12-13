@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
+## Web Resource: https://www.pythontutorial.net/tkinter/tkinter-event-binding/
+
 def AltA_pressed(event):
     print('Alt + A Pressed')
 
