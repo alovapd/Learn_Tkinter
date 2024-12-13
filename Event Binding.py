@@ -1,6 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 
+def return_pressed(event):
+    print('Return Key Pressed')
+
 # Window
 window = tk.Tk()
 window.geometry('600x500')
@@ -13,8 +16,11 @@ text.pack()
 entry = ttk.Entry(window)
 entry.pack()
 
-btn = ttk.Button(window, text = 'A button')
-btn.pack()
+button = tk.Button(window, text = 'A button')
+button.pack()
+
+# Events
+window.bind('<Return>', return_pressed)
 
 # run
 window.mainloop()
