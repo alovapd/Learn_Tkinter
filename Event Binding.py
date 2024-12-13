@@ -1,8 +1,8 @@
 import tkinter as tk
 from tkinter import ttk
 
-def return_pressed(event):
-    print('Return Key Pressed')
+def AltA_pressed(event):
+    print('Alt + A Pressed')
 
 # Window
 window = tk.Tk()
@@ -20,7 +20,7 @@ button = tk.Button(window, text = 'A button')
 button.pack()
 
 # Events
-window.bind('<Return>', return_pressed)
+window.bind('<Alt-KeyPressed-a>', AltA_pressed)
 
 # run
 window.mainloop()
